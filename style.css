@@ -41,12 +41,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 15px;
+    gap: 5px;
 }
 
 .btn {
     padding: 20px;
-    flex: 1 0 20%;
+    flex: 1 0 21%;
     border-radius: 5px;
     font-size: 1.5em;
     border: none;
@@ -54,5 +54,24 @@ body {
 }
 
 #bigBtn {
-    flex: 1 0 47%;
+    flex: 1 0 48%;
+}
+
+.btn[data-action="clear"], 
+.btn[data-action="delete"] {
+    background-color: orange;
+    font-weight: 550;
+}
+
+.btn[data-action="operator"] {
+    background-color: black;
+    color: white;
+    font-weight: 550;
+}
+
+.btn[data-action="calculate"] {
+    background-color: rgb(40, 40, 226);
+    color: white;
+    font-weight: 550;
+
 }
